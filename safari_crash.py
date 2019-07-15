@@ -42,9 +42,9 @@ def arguments():
             dest='PORT',
             help='Port to serve the exploit on (default: 8080)')
     parser.add_argument('-hst', '--hostname', action='store',
-            default='localhost',
+            default='0.0.0.0',
             dest='HOSTNAME',
-            help='Local hostname (default: localhost)')
+            help='Local hostname (default: 0.0.0.0)')
     parser.add_argument('-u', '--url', action='store',
             default='/index',
             dest='URL',

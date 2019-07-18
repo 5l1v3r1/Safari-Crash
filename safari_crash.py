@@ -37,11 +37,11 @@ def arguments():
     parser.add_argument('-l', '--list', action='store_true',
             dest='LIST',
             help='List available exploits')
-    parser.add_argument('-p', '--port', action='store',
+    parser.add_argument('-lp', '--port', action='store',
             default=8080,
             dest='PORT',
             help='Port to serve the exploit on (default: 8080)')
-    parser.add_argument('-hst', '--hostname', action='store',
+    parser.add_argument('-lh', '--hostname', action='store',
             default='0.0.0.0',
             dest='HOSTNAME',
             help='Local hostname (default: 0.0.0.0)')
